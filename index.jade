@@ -1,0 +1,75 @@
+nav.navbar.navbar-inverse.navbar-top(role="navigation")
+  div.container
+    div.navbar-header
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="#") FONHARE
+    div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href="#") About
+        li
+          a(href="#") Services
+        li
+          a(href="#") Contact
+
+header#myCarousel.carousel.slide
+  // Indicators
+  ol.carousel-indicators
+    li.active(data-target='#myCarousel', data-slide-to='0')
+    li(data-target='#myCarousel', data-slide-to='1')
+    li(data-target='#myCarousel', data-slide-to='2')
+  // Wrapper for Slides
+  .carousel-inner
+    .item.active
+      // Set the first background image using inline CSS below.
+      .fill(style="background-image:url('http://placehold.it/1900x1080&text=Slide One');")
+      .carousel-caption
+        h2 Caption 1
+    .item
+      // Set the second background image using inline CSS below.
+      .fill(style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');")
+      .carousel-caption
+        h2 Caption 2
+    .item
+      // Set the third background image using inline CSS below.
+      .fill(style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');")
+      .carousel-caption
+        h2 Caption 3
+  // Controls
+  a.left.carousel-control(href='#myCarousel', data-slide='prev')
+    span.icon-prev
+  a.right.carousel-control(href='#myCarousel', data-slide='next')
+    span.icon-next
+
+
+div.container-fluid
+  div.row
+    div.col-md-6
+      div.embed-responsive.embed-responsive-16by9
+        iframe.embed-responsive-item(width="560" height="315" src="https://www.youtube.com/embed/YpVVhTdpGiQ" frameborder="0" allowfullscreen)
+    div.col-md-6
+      h1.text-center Welcome to FONHARE!
+      p.lead From your friend at #[a(href="http://digitalstrategy.tips", target="_blank") DigitalStrategy.tips].
+      p The Haitian Foundation of Rehabilitation (FONHARE) is a grassroots Haitian non-profit organization dedicated to providing integrated physical and cognitive rehabilitation services to children and youth with disabilities in Haiti, especially those with a poor quality of life living with limited resources regardless their socioeconomic condition. FONHARE is the only organization providing rehab services in the northeast of Haiti to 13 cities with almost 500,000 citizens.
+
+  .row
+    .col-lg-12.text-center
+      h2 Your Help is Vital
+      p.lead We need your financial and volunteer support for:
+  .row
+    .col-md-3.col-xs-6
+      img.img-circle.img-center.img-responsive(src="http://placehold.it/200x200&text=image")
+      p.text-center.lead Improving Quality of Life
+    .col-md-3.col-xs-6
+      img.img-circle.img-center.img-responsive(src="http://placehold.it/200x200&text=image")
+      p.text-center.lead Increasing independence
+    .col-md-3.col-xs-6
+      img.img-circle.img-center.img-responsive(src="http://placehold.it/200x200&text=image")
+      p.text-center.lead Reintegrating Into Society
+    .col-md-3.col-xs-6
+      img.img-circle.img-center.img-responsive(src="http://placehold.it/200x200&text=image")
+      p.text-center.lead Transferring Knowledge
