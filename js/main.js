@@ -7,7 +7,7 @@ $(document).ready(function(){
 	var domain = $(location).attr('hostname');
 	if(domain === 'localhost'){
 		$('a.serving').each(function(){
-			var newLink = $(this).attr('href').slice(8);
+			var newLink = $(this).attr('href').slice(18);
 			$(this).attr('href', newLink);
 		});
 	}
