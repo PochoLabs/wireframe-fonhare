@@ -1,13 +1,15 @@
 doctype
 html(lang="en")
-  head
-    title Fondation Haitienne de Rehabilitation | FONHARE
-    link(rel="stylesheet" href="main.css")
-    link(rel="shortcut icon", href="img/favicon.png", type="image/x-icon")
-    meta(name="viewport", content="width=device-width, initial-scale=1")
-  body
-    != yield
+	head
+		title Fondation Haitienne de Rehabilitation | FONHARE
+		link(rel="stylesheet" href="main.css")
+		link(rel="shortcut icon", href="img/favicon.png", type="image/x-icon")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+	body
+		include _partials/nav.jade
 
-    script(src="js/jquery-2.1.4.js")
-    script(src="js/bootstrap.min.js")
-    script(src="js/main.js")
+		!= yield
+
+		script(src="js/jquery-2.1.4.js")
+		script(src="js/bootstrap.min.js")
+		script(src="js/main.js")

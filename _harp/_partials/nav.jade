@@ -1,19 +1,43 @@
 nav.navbar.navbar-inverse.navbar-top(role="navigation")
-  div.container
-    div.navbar-header
-      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href="#") FONHARE
-    div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
-      ul.nav.navbar-nav.navbar-right
-        li
-          a.serving(href="/wireframe-fonhare/about.html") About
-        li
-          a.serving(href="/wireframe-fonhare/programs.html") Programs
-        li
-          a.serving(href="/wireframe-fonhare/get-involved.html") Get Involved
-        li
-          a.serving(href="/wireframe-fonhare/donate.html") Donate
+	div.container
+		div.navbar-header
+			button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href="#") FONHARE
+		div.collapse.navbar-collapse(id="bs-example-navbar-collapse-1")
+			ul.nav.navbar-nav.navbar-right
+				li
+					a(href="/") Home
+				li
+					a.dropdown-toggle(href="#", data-toggle="dropdown") About
+						ul.dropdown-menu(role="menu")
+							li
+								a(href="/page/staff") Staff
+							li
+								a(href="/page/financial") Financial Information
+							li
+								a(href="/page/partners") Partners
+				li
+					a.dropdown-toggle(href="#", data-toggle="dropdown") Programs
+						ul.dropdown-menu(role="menu")
+							li
+								a(href="/page/sponsor-a-therapist") Sponsor a Therapist
+				li
+					a.dropdown-toggle(href="#", data-toggle="dropdown") Contact
+						ul.dropdown-menu(role="menu")
+							li
+								a(href="/page/headquarters") Headquarters
+							li
+								a(href="/page/haiti") Haiti
+				li
+					a.dropdown-toggle(href="#", data-toggle="dropdown") Get Involved
+						ul.dropdown-menu(role="menu")
+							li
+								a(href="/page/sponsor-a-therapist") Sponsor a Therapist
+							li
+								a(href="/page/volunteer") Volunteer
+				li
+					a.btn.btn-success(href="/page/donate", style="color:#fff;") Donate
