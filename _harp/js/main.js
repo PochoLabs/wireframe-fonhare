@@ -3,12 +3,18 @@ $(document).ready(function(){
         interval: 5000 //changes the speed
     });
 
-	// for test hosting
 	var domain = $(location).attr('hostname');
+
 	if(domain === 'localhost'){
-		$('a.serving').each(function(){
+		$('.serving').each(function(){
+			var newLink = $(this).attr('href').slice(18);
+			$(this).attr('href', newLink);
+		});
+
+		$('.navbar-brand').each(function(){
 			var newLink = $(this).attr('href').slice(18);
 			$(this).attr('href', newLink);
 		});
 	}
+
 });
